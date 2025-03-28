@@ -1,7 +1,6 @@
-
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import { Button } from "@/components/ui/button";
-import { Home, Building, Mountain, Ship, Tree } from "lucide-react";
+import { Home, Building, Mountain, Ship, Trees } from "lucide-react";
 import { PropertyType, propertyTypes } from "@/data/properties";
 
 interface FilterBarProps {
@@ -23,7 +22,7 @@ const FilterBar: React.FC<FilterBarProps> = ({ selectedType, onSelectType }) => 
       case 'boat':
         return <Ship className="h-5 w-5" />;
       case 'treehouse':
-        return <Tree className="h-5 w-5" />;
+        return <Trees className="h-5 w-5" />;
       default:
         return <Home className="h-5 w-5" />;
     }
