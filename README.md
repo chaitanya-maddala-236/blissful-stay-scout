@@ -1,69 +1,137 @@
-# Welcome to your Lovable project
+# Blissful Stay Scout
 
-## Project info
+A smart hotel recommendation system that helps travelers find their perfect accommodations based on preferences, budget, and location.
 
-**URL**: https://lovable.dev/projects/7bff056c-dcad-4d7c-b3f6-a93fd6ca1e62
+![Blissful Stay Scout](https://raw.githubusercontent.com/chaitanya-maddala-236/blissful-stay-scout/main/assets/logo.png)
 
-## How can I edit this code?
+## 🌟 Overview
 
-There are several ways of editing your application.
+Blissful Stay Scout is an intelligent hotel recommendation platform designed to simplify the travel planning process. By analyzing user preferences, budget constraints, and desired locations, our system delivers personalized hotel suggestions that match exactly what you're looking for.
 
-**Use Lovable**
+## ✨ Features
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/7bff056c-dcad-4d7c-b3f6-a93fd6ca1e62) and start prompting.
+- **Personalized Recommendations**: Get hotel suggestions tailored to your specific needs and preferences
+- **Budget Filtering**: Find great accommodations that respect your financial constraints
+- **Location Analysis**: Discover hotels in your desired areas with proximity to attractions
+- **User Reviews Integration**: Make informed decisions based on authentic feedback from other travelers
+- **Booking Assistance**: Seamless redirection to booking platforms for easy reservation
+- **Favorites List**: Save and compare your top hotel choices
+- **Travel Planning Tools**: Additional resources to enhance your trip planning experience
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🚀 Getting Started
 
-**Use your preferred IDE**
+### Prerequisites
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- Node.js (v14 or higher)
+- MongoDB
+- npm or yarn
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Installation
 
-Follow these steps:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/chaitanya-maddala-236/blissful-stay-scout.git
+   cd blissful-stay-scout
+   ```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+3. Set up environment variables:
+   - Create a `.env` file in the root directory
+   - Add the following variables:
+     ```
+     PORT=3000
+     MONGODB_URI=your_mongodb_connection_string
+     API_KEY=your_hotel_api_key
+     JWT_SECRET=your_jwt_secret
+     ```
 
-# Step 3: Install the necessary dependencies.
-npm i
+4. Start the application:
+   ```bash
+   npm start
+   ```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+5. The application will be running at `http://localhost:3000`
+
+## 🔧 Tech Stack
+
+- **Frontend**: React.js, Redux, TailwindCSS
+- **Backend**: Node.js, Express
+- **Database**: MongoDB
+- **Authentication**: JWT
+- **APIs**: Hotel Booking API, Google Maps API
+- **Deployment**: Docker, AWS/Heroku
+
+## 📊 Project Structure
+
+```
+blissful-stay-scout/
+├── client/                 # Frontend React application
+│   ├── public/             # Static files
+│   └── src/                # React source files
+├── server/                 # Backend Node.js application
+│   ├── controllers/        # Request handlers
+│   ├── models/             # Database models
+│   ├── routes/             # API routes
+│   └── utils/              # Utility functions
+├── config/                 # Configuration files
+├── scripts/                # Build and deployment scripts
+├── tests/                  # Test files
+├── .env                    # Environment variables
+├── package.json            # Project dependencies
+└── README.md               # Project documentation
 ```
 
-**Edit a file directly in GitHub**
+## 🔍 API Endpoints
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Authentication
+- `POST /api/auth/register` - Register a new user
+- `POST /api/auth/login` - Login a user
 
-**Use GitHub Codespaces**
+### Hotel Recommendations
+- `GET /api/hotels/recommendations` - Get personalized hotel recommendations
+- `GET /api/hotels/search` - Search hotels by location, price, and amenities
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### User Profile
+- `GET /api/user/profile` - Get user profile information
+- `PUT /api/user/preferences` - Update user preferences
+- `GET /api/user/favorites` - Get user's favorite hotels
+- `POST /api/user/favorites/:hotelId` - Add a hotel to favorites
 
-## What technologies are used for this project?
+## 🧪 Testing
 
-This project is built with .
+Run tests using the following command:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+```bash
+npm test
+```
 
-## How can I deploy this project?
+## 🤝 Contributing
 
-Simply open [Lovable](https://lovable.dev/projects/7bff056c-dcad-4d7c-b3f6-a93fd6ca1e62) and click on Share -> Publish.
+We welcome contributions to Blissful Stay Scout! Please follow these steps:
 
-## I want to use a custom domain - is that possible?
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/amazing-feature`)
+3. Make your changes
+4. Commit your changes (`git commit -m 'Add some amazing feature'`)
+5. Push to the branch (`git push origin feature/amazing-feature`)
+6. Open a Pull Request
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+Please make sure to update tests as appropriate.
+
+## 📜 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 📞 Contact
+
+Chaitanya Maddala - [@chaitanya_m236](https://twitter.com/chaitanya_m236) - chaitanya.maddala.236@gmail.com
+
+Project Link: [https://github.com/chaitanya-maddala-236/blissful-stay-scout](https://github.com/chaitanya-maddala-236/blissful-stay-scout)
+
+---
+
+Designed and built with ❤️ by Chaitanya Maddala
