@@ -131,7 +131,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 Chaitanya Maddala - [@chaitanya_m236](https://twitter.com/chaitanya_m236) - chaitanya.maddala.236@gmail.com
 
 Project Link: [https://github.com/chaitanya-maddala-236/blissful-stay-scout](https://github.com/chaitanya-maddala-236/blissful-stay-scout)
-
----
-
-Designed and built with ❤️ by Chaitanya Maddala
